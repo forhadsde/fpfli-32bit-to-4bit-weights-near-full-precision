@@ -1,22 +1,20 @@
-# Shared code and data (not included)
+# Shared code and data (download from the original sources)
 
-The notebooks look for this folder by name, so keep it here and place the following inside it.
+The notebooks look for this folder by name, so keep it here. The files themselves are not copied into this repository. Each subfolder has a `SOURCE.md` with the exact link and setup steps.
 
-## 1. `Dr_Li_FPFLI_code/`
+| Folder | What goes in it | Where to get it | Needed for |
+|---|---|---|---|
+| [`Dr_Li_FPFLI_code/`](Dr_Li_FPFLI_code/SOURCE.md) | FPFLI code, pretrained LLE and NIII models, sample data (synthetic images, HEK293, microspheres) | https://github.com/Dooongx/FPFLI (copy the contents of its `Evaluation` folder) | All experiments |
+| [`Datasets/SPAD_FLIM_Glasgow_Zickus2020/`](Datasets/SPAD_FLIM_Glasgow_Zickus2020/SOURCE.md) | Glasgow megapixel SPAD FLIM data (CC BY 4.0) | https://doi.org/10.5525/gla.researchdata.1012 | E6 retraining only |
 
-The FPFLI release by Xiao, Sapermsap, Chen and Li (Optica 2023). It should contain:
+## Papers
 
-* `tau_net.py`, `Pred_local_lifetime.py`, `Prep_exp_data.py`, `NIII_model.py`, `Neural_implict_interploation.py`, `utils.py`
-* `model_parameters/LLE_parameter.pth`, `model_parameters/LLE_parameter_1_3ns.pth`, `model_parameters/NIII_parameter_L8.pth.tar`
-* `sample_data/` with `1.mat` to `6.mat`, `irf_gaussian.mat`, `hek_low.mat`, `hek_gt.mat`, `microsphere_2p_1.mat`, `microsphere_2p_2.mat` and `irf_measure.mat`
+* D. Xiao, N. Sapermsap, Y. Chen and D. D. U. Li, "Deep learning enhanced fast fluorescence lifetime imaging with a few photons", *Optica* 10(7), 944 to 951 (2023). https://strathprints.strath.ac.uk/85874
+* V. Zickus et al., "Fluorescence lifetime imaging with a megapixel SPAD camera and neural network lifetime estimation", *Scientific Reports* 10 (2020). https://doi.org/10.1038/s41598-020-77737-0
 
-The pretrained model links are listed in the release's `model_parameters/readme.md`. These files belong to the original authors and are not redistributed here.
+## My retrained models
 
-My retrained 4 bit models are saved into the same `model_parameters/` folder when E4 and E6 are run with `RETRAIN = True`:
+When E4 and E6 run with `RETRAIN = True`, my 4 bit models are saved into `Dr_Li_FPFLI_code/model_parameters/`:
 
 * E4: `LLE_parameter_QAT_INT4.pth`, `LLE_parameter_V2.pth` to `LLE_parameter_V4.pth`, and the matching `LLE_parameter_1_3ns_*.pth` files
 * E6: `NIII_parameter_L8_INT4_distil.pth.tar`, `NIII_parameter_L8_INT4mixed_distil.pth.tar`, `NIII_parameter_L8_INT4_all3.pth.tar`
-
-## 2. `Datasets/SPAD_FLIM_Glasgow_Zickus2020/` (E6 training only)
-
-The public data from Zickus et al. 2020, "Fluorescence lifetime imaging with a megapixel SPAD camera and neural network lifetime estimation". E6 uses three intensity images from it (two Convallaria exposures and HT1080 cells) to make practice images for distillation. It is not needed when `RETRAIN = False`.

@@ -84,7 +84,14 @@ Every number above is recomputed from the saved models in one deterministic run 
 
 ## How to run
 
-The notebooks use Dr Li's released FPFLI code, trained models and sample data, which are **not included here**. See [`04_Shared_Code_and_Data/README.md`](04_Shared_Code_and_Data/README.md) for what to place there.
+The notebooks use Dr Li's released FPFLI code, trained models and sample data, which are **not copied here**. Download them from the original sources:
+
+| What | Source | Put it in |
+|---|---|---|
+| FPFLI code, pretrained models and sample data (synthetic images, HEK293 cells, microspheres) | https://github.com/Dooongx/FPFLI (contents of its `Evaluation` folder) | `04_Shared_Code_and_Data/Dr_Li_FPFLI_code/` |
+| Glasgow megapixel SPAD FLIM data, CC BY 4.0 (E6 retraining only) | https://doi.org/10.5525/gla.researchdata.1012 | `04_Shared_Code_and_Data/Datasets/SPAD_FLIM_Glasgow_Zickus2020/` |
+
+Each folder has a `SOURCE.md` with step by step setup ([FPFLI](04_Shared_Code_and_Data/Dr_Li_FPFLI_code/SOURCE.md), [Glasgow data](04_Shared_Code_and_Data/Datasets/SPAD_FLIM_Glasgow_Zickus2020/SOURCE.md)).
 
 ```
 04_Shared_Code_and_Data/
@@ -103,8 +110,8 @@ All results in this repository were produced on an NVIDIA GeForce RTX 3090 in Oc
 
 ## Acknowledgements and references
 
-* D. Xiao, N. Sapermsap, Y. Chen and D. D. U. Li, "Deep learning enhanced fast fluorescence lifetime imaging with a few photons", *Optica* 10(7), 944 to 951 (2023). [Strathprints](https://strathprints.strath.ac.uk/85874), [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.04.06.534322v1). The FPFLI code, pretrained models and sample data belong to the original authors.
-* A. Zickus et al., "Fluorescence lifetime imaging with a megapixel SPAD camera and neural network lifetime estimation", *Scientific Reports* (2020). Its public data was used only to make practice images for distillation in E6.
+* D. Xiao, N. Sapermsap, Y. Chen and D. D. U. Li, "Deep learning enhanced fast fluorescence lifetime imaging with a few photons", *Optica* 10(7), 944 to 951 (2023). [Strathprints](https://strathprints.strath.ac.uk/85874), [bioRxiv](https://www.biorxiv.org/content/10.1101/2023.04.06.534322v1), code at [github.com/Dooongx/FPFLI](https://github.com/Dooongx/FPFLI). The FPFLI code, pretrained models and sample data belong to the original authors.
+* V. Zickus et al., "Fluorescence lifetime imaging with a megapixel SPAD camera and neural network lifetime estimation", *Scientific Reports* 10 (2020), [doi:10.1038/s41598-020-77737-0](https://doi.org/10.1038/s41598-020-77737-0). Data: [doi:10.5525/gla.researchdata.1012](https://doi.org/10.5525/gla.researchdata.1012), CC BY 4.0. Used only to make practice images for distillation in E6.
 * S. K. Esser et al., "Learned step size quantization", ICLR 2020.
 * Y. Bengio, N. Léonard and A. Courville, "Estimating or propagating gradients through stochastic neurons for conditional computation", arXiv 1308.3432 (2013).
 * G. Hinton, O. Vinyals and J. Dean, "Distilling the knowledge in a neural network", arXiv 1503.02531 (2015).

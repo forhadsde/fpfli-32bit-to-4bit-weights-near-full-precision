@@ -1,6 +1,12 @@
-# Dr Li's FPFLI code, models and data are not redistributed
-04_Shared_Code_and_Data/*
+# Dr Li's FPFLI code, models and data are not redistributed; only the source notes are kept
+04_Shared_Code_and_Data/**
+!04_Shared_Code_and_Data/
 !04_Shared_Code_and_Data/README.md
+!04_Shared_Code_and_Data/Dr_Li_FPFLI_code/
+!04_Shared_Code_and_Data/Dr_Li_FPFLI_code/SOURCE.md
+!04_Shared_Code_and_Data/Datasets/
+!04_Shared_Code_and_Data/Datasets/SPAD_FLIM_Glasgow_Zickus2020/
+!04_Shared_Code_and_Data/Datasets/SPAD_FLIM_Glasgow_Zickus2020/SOURCE.md
 
 # Models, caches and large data
 *.pth
