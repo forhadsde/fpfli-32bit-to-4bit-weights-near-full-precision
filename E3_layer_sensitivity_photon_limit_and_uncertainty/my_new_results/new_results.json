@@ -1,0 +1,289 @@
+{
+  "A_mixed_precision": {
+    "sensitivity_ns": {
+      "embd_decay": 0.014031648635864258,
+      "embd_irf": 0.008393049240112305,
+      "conv_blocks.0.res.0.fn.0": 0.20240795612335205,
+      "conv_blocks.0.ponitconv": 0.17664885520935059,
+      "conv_blocks.1.res.0.fn.0": 0.03863418102264404,
+      "conv_blocks.1.ponitconv": 0.15634465217590332,
+      "conv_blocks.2.res.0.fn.0": 0.06925749778747559,
+      "conv_blocks.2.ponitconv": 0.1159367561340332,
+      "conv_blocks.3.res.0.fn.0": 0.030770301818847656,
+      "conv_blocks.3.ponitconv": 0.025479793548583984,
+      "conv_blocks.4.res.0.fn.0": 0.021295785903930664,
+      "conv_blocks.4.ponitconv": 0.07349395751953125,
+      "conv_blocks.5.res.0.fn.0": 0.01945638656616211,
+      "conv_blocks.5.ponitconv": 0.042696356773376465,
+      "conv_blocks.6.res.0.fn.0": 0.04841482639312744,
+      "conv_blocks.6.ponitconv": 0.02803349494934082,
+      "conv_blocks.7.res.0.fn.0": 0.07411313056945801,
+      "conv_blocks.7.ponitconv": 0.17094731330871582,
+      "ponitconv1": 0.6072874069213867,
+      "ponitconv2": 0.07904911041259766,
+      "ponitconv3": 0.3903357982635498
+    },
+    "weights_per_layer": {
+      "embd_decay": 128,
+      "embd_irf": 128,
+      "conv_blocks.0.res.0.fn.0": 288,
+      "conv_blocks.0.ponitconv": 1024,
+      "conv_blocks.1.res.0.fn.0": 288,
+      "conv_blocks.1.ponitconv": 1024,
+      "conv_blocks.2.res.0.fn.0": 288,
+      "conv_blocks.2.ponitconv": 1024,
+      "conv_blocks.3.res.0.fn.0": 288,
+      "conv_blocks.3.ponitconv": 1024,
+      "conv_blocks.4.res.0.fn.0": 288,
+      "conv_blocks.4.ponitconv": 1024,
+      "conv_blocks.5.res.0.fn.0": 288,
+      "conv_blocks.5.ponitconv": 1024,
+      "conv_blocks.6.res.0.fn.0": 288,
+      "conv_blocks.6.ponitconv": 1024,
+      "conv_blocks.7.res.0.fn.0": 288,
+      "conv_blocks.7.ponitconv": 1024,
+      "ponitconv1": 16384,
+      "ponitconv2": 128,
+      "ponitconv3": 8
+    },
+    "all_int8_change": 0.020842313766479492,
+    "all_int4_change": 1.5757211446762085,
+    "greedy": [
+      {
+        "layers_at_8bit": 0,
+        "median_change_ns": 1.5757211446762085,
+        "weight_KB": 13.31640625
+      },
+      {
+        "layers_at_8bit": 1,
+        "median_change_ns": 1.0222878456115723,
+        "weight_KB": 21.31640625
+      },
+      {
+        "layers_at_8bit": 2,
+        "median_change_ns": 0.5294928550720215,
+        "weight_KB": 21.3203125
+      },
+      {
+        "layers_at_8bit": 3,
+        "median_change_ns": 0.30486083030700684,
+        "weight_KB": 21.4609375
+      },
+      {
+        "layers_at_8bit": 4,
+        "median_change_ns": 0.17436647415161133,
+        "weight_KB": 21.9609375
+      },
+      {
+        "layers_at_8bit": 5,
+        "median_change_ns": 0.23598265647888184,
+        "weight_KB": 22.4609375
+      },
+      {
+        "layers_at_8bit": 6,
+        "median_change_ns": 0.17388832569122314,
+        "weight_KB": 22.9609375
+      },
+      {
+        "layers_at_8bit": 7,
+        "median_change_ns": 0.14194416999816895,
+        "weight_KB": 23.4609375
+      },
+      {
+        "layers_at_8bit": 8,
+        "median_change_ns": 0.08415699005126953,
+        "weight_KB": 23.5234375
+      },
+      {
+        "layers_at_8bit": 9,
+        "median_change_ns": 0.056710243225097656,
+        "weight_KB": 23.6640625
+      },
+      {
+        "layers_at_8bit": 10,
+        "median_change_ns": 0.05453658103942871,
+        "weight_KB": 24.1640625
+      },
+      {
+        "layers_at_8bit": 11,
+        "median_change_ns": 0.05777895450592041,
+        "weight_KB": 24.3046875
+      },
+      {
+        "layers_at_8bit": 12,
+        "median_change_ns": 0.07019186019897461,
+        "weight_KB": 24.4453125
+      },
+      {
+        "layers_at_8bit": 13,
+        "median_change_ns": 0.06855297088623047,
+        "weight_KB": 24.9453125
+      },
+      {
+        "layers_at_8bit": 14,
+        "median_change_ns": 0.040703773498535156,
+        "weight_KB": 25.0859375
+      }
+    ],
+    "layers_kept_8bit": [
+      "ponitconv1",
+      "ponitconv3",
+      "conv_blocks.0.res.0.fn.0",
+      "conv_blocks.0.ponitconv",
+      "conv_blocks.7.ponitconv",
+      "conv_blocks.1.ponitconv",
+      "conv_blocks.2.ponitconv",
+      "ponitconv2",
+      "conv_blocks.7.res.0.fn.0",
+      "conv_blocks.4.ponitconv",
+      "conv_blocks.2.res.0.fn.0",
+      "conv_blocks.6.res.0.fn.0",
+      "conv_blocks.5.ponitconv",
+      "conv_blocks.1.res.0.fn.0"
+    ],
+    "KB": {
+      "FP32": 106.53125,
+      "INT8": 26.6328125,
+      "Mixed": 25.0859375,
+      "INT4": 13.31640625
+    },
+    "full_pipeline": {
+      "FP32": {
+        "synthetic_mean_MAE_ns": 0.16110637908180556,
+        "hek_MAE_ns": 0.13413378596305847
+      },
+      "INT8": {
+        "synthetic_mean_MAE_ns": 0.16500213369727135,
+        "hek_MAE_ns": 0.16060248017311096
+      },
+      "INT4": {
+        "synthetic_mean_MAE_ns": 1.472251057624817,
+        "hek_MAE_ns": 1.0449501276016235
+      },
+      "Mixed": {
+        "synthetic_mean_MAE_ns": 0.15539864699045816,
+        "hek_MAE_ns": 0.1527177393436432
+      }
+    }
+  },
+  "B_photon_limit": {
+    "tests": [
+      "synthetic 1",
+      "synthetic 3",
+      "synthetic 5",
+      "HEK293 real"
+    ],
+    "FPFLI": {
+      "1.0": [
+        0.08504605293273926,
+        0.08819836378097534,
+        0.34591740369796753,
+        0.13413378596305847
+      ],
+      "0.5": [
+        0.2429715394973755,
+        0.11870846897363663,
+        0.407611221075058,
+        0.17121107876300812
+      ],
+      "0.3": [
+        0.35392099618911743,
+        0.20373760163784027,
+        0.46843650937080383,
+        0.24270202219486237
+      ],
+      "0.2": [
+        0.48717910051345825,
+        0.33286434412002563,
+        0.5898798704147339,
+        0.28131338953971863
+      ],
+      "0.1": [
+        0.5852487683296204,
+        0.5708000659942627,
+        0.7496641278266907,
+        0.39916160702705383
+      ]
+    },
+    "CMM+NIII": {
+      "1.0": [
+        0.5735083818435669,
+        0.24389947950839996,
+        0.5566778182983398,
+        0.38770416378974915
+      ],
+      "0.5": [
+        0.5900517106056213,
+        0.253863126039505,
+        0.5703346729278564,
+        0.38812217116355896
+      ],
+      "0.3": [
+        0.5435625910758972,
+        0.254692018032074,
+        0.6014652848243713,
+        0.3761231601238251
+      ],
+      "0.2": [
+        0.5926810503005981,
+        0.2596667408943176,
+        0.5631532669067383,
+        0.4083245098590851
+      ],
+      "0.1": [
+        0.5960838794708252,
+        0.27599552273750305,
+        0.6770444512367249,
+        0.45976853370666504
+      ]
+    },
+    "photons_per_pixel": {
+      "1.0": [
+        11.24036979675293,
+        12.31384563446045,
+        11.152841567993164,
+        10.201522827148438
+      ],
+      "0.5": [
+        5.611122131347656,
+        6.171517372131348,
+        5.584323406219482,
+        5.090367317199707
+      ],
+      "0.3": [
+        3.36698055267334,
+        3.699418783187866,
+        3.334831714630127,
+        3.0592095851898193
+      ],
+      "0.2": [
+        2.240903854370117,
+        2.4597713947296143,
+        2.2204859256744385,
+        2.0452587604522705
+      ],
+      "0.1": [
+        1.1195673942565918,
+        1.2308969497680664,
+        1.109208345413208,
+        1.023443341255188
+      ]
+    }
+  },
+  "C_uncertainty": {
+    "synthetic 3": {
+      "spearman_uncertainty_vs_error": 0.3425028473022246,
+      "MAE_most_uncertain_10pct_ns": 0.2734224796295166,
+      "MAE_other_90pct_ns": 0.06761742383241653,
+      "MAE_if_flagged_pixels_removed_ns": 0.06761742383241653,
+      "MAE_all_ns": 0.08819836378097534
+    },
+    "HEK293 real": {
+      "spearman_uncertainty_vs_error": 0.09033740985477244,
+      "MAE_most_uncertain_10pct_ns": 0.18165019154548645,
+      "MAE_other_90pct_ns": 0.12885360419750214,
+      "MAE_if_flagged_pixels_removed_ns": 0.12885360419750214,
+      "MAE_all_ns": 0.13413378596305847
+    }
+  }
+}

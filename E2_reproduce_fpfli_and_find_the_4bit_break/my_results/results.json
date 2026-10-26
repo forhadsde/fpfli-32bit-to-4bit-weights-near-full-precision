@@ -1,0 +1,86 @@
+{
+  "synthetic_low_light": {
+    "1": {
+      "photons_per_pixel": 11.24036979675293,
+      "FP32_MAE_ns": 0.08504605293273926,
+      "FP32_seconds": 0.5337789058685303,
+      "INT8_MAE_ns": 0.08922916650772095,
+      "INT8_seconds": 0.22947478294372559,
+      "INT4_MAE_ns": 1.072468876838684,
+      "INT4_seconds": 0.23927688598632812,
+      "INT8_vs_FP32_median_change_ns": 0.02120804786682129,
+      "INT4_vs_FP32_median_change_ns": 1.0115827322006226
+    },
+    "2": {
+      "photons_per_pixel": 12.563610076904297,
+      "FP32_MAE_ns": 0.11860092729330063,
+      "FP32_seconds": 0.25284624099731445,
+      "INT8_MAE_ns": 0.12867529690265656,
+      "INT8_seconds": 0.2411363124847412,
+      "INT4_MAE_ns": 1.6237558126449585,
+      "INT4_seconds": 0.24380159378051758,
+      "INT8_vs_FP32_median_change_ns": 0.024196982383728027,
+      "INT4_vs_FP32_median_change_ns": 1.6697790622711182
+    },
+    "3": {
+      "photons_per_pixel": 12.31384563446045,
+      "FP32_MAE_ns": 0.08819836378097534,
+      "FP32_seconds": 0.2326974868774414,
+      "INT8_MAE_ns": 0.08764538913965225,
+      "INT8_seconds": 0.246185302734375,
+      "INT4_MAE_ns": 2.097081422805786,
+      "INT4_seconds": 0.23392653465270996,
+      "INT8_vs_FP32_median_change_ns": 0.004413723945617676,
+      "INT4_vs_FP32_median_change_ns": 2.3308310508728027
+    },
+    "4": {
+      "photons_per_pixel": 11.536035537719727,
+      "FP32_MAE_ns": 0.14263884723186493,
+      "FP32_seconds": 0.24154996871948242,
+      "INT8_MAE_ns": 0.1413850039243698,
+      "INT8_seconds": 0.2326030731201172,
+      "INT4_MAE_ns": 1.561843752861023,
+      "INT4_seconds": 0.24585866928100586,
+      "INT8_vs_FP32_median_change_ns": 0.012361526489257812,
+      "INT4_vs_FP32_median_change_ns": 1.881016731262207
+    },
+    "5": {
+      "photons_per_pixel": 11.152841567993164,
+      "FP32_MAE_ns": 0.34591740369796753,
+      "FP32_seconds": 0.24739670753479004,
+      "INT8_MAE_ns": 0.34849801659584045,
+      "INT8_seconds": 0.2431654930114746,
+      "INT4_MAE_ns": 1.1732670068740845,
+      "INT4_seconds": 0.24591732025146484,
+      "INT8_vs_FP32_median_change_ns": 0.01767706871032715,
+      "INT4_vs_FP32_median_change_ns": 0.8175342082977295
+    },
+    "6": {
+      "photons_per_pixel": 11.34608268737793,
+      "FP32_MAE_ns": 0.1862366795539856,
+      "FP32_seconds": 0.23735833168029785,
+      "INT8_MAE_ns": 0.19457992911338806,
+      "INT8_seconds": 0.2443704605102539,
+      "INT4_MAE_ns": 1.3050894737243652,
+      "INT4_seconds": 0.2712221145629883,
+      "INT8_vs_FP32_median_change_ns": 0.027576565742492676,
+      "INT4_vs_FP32_median_change_ns": 1.280686616897583
+    }
+  },
+  "hek293_real": {
+    "FP32_MAE_ns": 0.13413378596305847,
+    "FP32_seconds": 0.37226271629333496,
+    "INT8_MAE_ns": 0.16060248017311096,
+    "INT8_seconds": 0.31900525093078613,
+    "INT4_MAE_ns": 1.0449501276016235,
+    "INT4_seconds": 0.22787714004516602
+  },
+  "microsphere_2p_1": {
+    "seconds": 0.2348182201385498,
+    "INT8_vs_FP32_median_change_ns": 0.011968791484832764
+  },
+  "microsphere_2p_2": {
+    "seconds": 0.23625612258911133,
+    "INT8_vs_FP32_median_change_ns": 0.010113418102264404
+  }
+}

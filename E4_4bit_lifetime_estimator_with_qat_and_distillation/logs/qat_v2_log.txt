@@ -1,0 +1,41 @@
+Device: cuda NVIDIA GeForce RTX 3090
+FP32 original                synthetic 0.161 ns  HEK293 0.134 ns
+V1 (previous QAT)            synthetic 0.259 ns  HEK293 0.185 ns
+data ready (21 s)
+=== V2 ===
+  [V2] epoch 5/20 val median error 0.6142 ns (65 s)
+  [V2] epoch 10/20 val median error 0.3654 ns (109 s)
+  [V2] epoch 15/20 val median error 0.1406 ns (152 s)
+  [V2] epoch 20/20 val median error 0.1536 ns (194 s)
+  [V2] {"simulated_val_median_error_ns": 0.170396089553833, "teacher_FP32_val_median_error_ns": 0.24346420168876648, "weight_KB": 13.31640625, "max_levels_4bit_layers": 15}
+  [V2] epoch 5/20 val median error 0.2201 ns (238 s)
+  [V2] epoch 10/20 val median error 0.3070 ns (280 s)
+  [V2] epoch 15/20 val median error 0.1753 ns (323 s)
+  [V2] epoch 20/20 val median error 0.1673 ns (365 s)
+  [V2] {"simulated_val_median_error_ns": 0.15889394283294678, "teacher_FP32_val_median_error_ns": 0.26910948753356934, "weight_KB": 13.31640625, "max_levels_4bit_layers": 15}
+V2                           synthetic 0.165 ns  HEK293 0.159 ns  (13.3 KB)
+=== V3 ===
+  [V3] epoch 5/20 val median error 0.2566 ns (428 s)
+  [V3] epoch 10/20 val median error 0.3389 ns (490 s)
+  [V3] epoch 15/20 val median error 0.1520 ns (553 s)
+  [V3] epoch 20/20 val median error 0.1564 ns (616 s)
+  [V3] {"simulated_val_median_error_ns": 0.17035305500030518, "teacher_FP32_val_median_error_ns": 0.24346420168876648, "weight_KB": 13.31640625, "max_levels_4bit_layers": 15}
+  [V3] epoch 5/20 val median error 0.3762 ns (675 s)
+  [V3] epoch 10/20 val median error 0.3304 ns (738 s)
+  [V3] epoch 15/20 val median error 0.1972 ns (802 s)
+  [V3] epoch 20/20 val median error 0.1627 ns (865 s)
+  [V3] {"simulated_val_median_error_ns": 0.15947270393371582, "teacher_FP32_val_median_error_ns": 0.26910948753356934, "weight_KB": 13.31640625, "max_levels_4bit_layers": 15}
+V3                           synthetic 0.167 ns  HEK293 0.150 ns  (13.3 KB)
+=== V4 ===
+  [V4] epoch 5/20 val median error 0.2445 ns (933 s)
+  [V4] epoch 10/20 val median error 0.4035 ns (995 s)
+  [V4] epoch 15/20 val median error 0.1958 ns (1059 s)
+  [V4] epoch 20/20 val median error 0.1669 ns (1123 s)
+  [V4] {"simulated_val_median_error_ns": 0.17024147510528564, "teacher_FP32_val_median_error_ns": 0.24346420168876648, "weight_KB": 13.5078125, "max_levels_4bit_layers": 15}
+  [V4] epoch 5/20 val median error 0.2370 ns (1184 s)
+  [V4] epoch 10/20 val median error 0.2278 ns (1244 s)
+  [V4] epoch 15/20 val median error 0.1787 ns (1303 s)
+  [V4] epoch 20/20 val median error 0.1654 ns (1364 s)
+  [V4] {"simulated_val_median_error_ns": 0.1611553430557251, "teacher_FP32_val_median_error_ns": 0.26910948753356934, "weight_KB": 13.5078125, "max_levels_4bit_layers": 15}
+V4                           synthetic 0.167 ns  HEK293 0.142 ns  (13.5 KB)
+ALL DONE (1367 s)

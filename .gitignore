@@ -1,0 +1,15 @@
+# Dr Li's FPFLI code, models and data are not redistributed
+04_Shared_Code_and_Data/*
+!04_Shared_Code_and_Data/README.md
+
+# Models, caches and large data
+*.pth
+*.pth.tar
+*.npz
+*.mat
+*.npy
+
+# Python and Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc

@@ -1,0 +1,10 @@
+Device: cuda NVIDIA GeForce RTX 3090
+NIII weights: 14,553,600 (58.2 MB at FP32)
+FP32 (original)              synthetic 0.088 ns  HEK293 0.134 ns (1 s)
+INT8 plain                   synthetic 0.091 ns  HEK293 0.134 ns (1 s)
+INT4 plain                   synthetic 0.171 ns  HEK293 0.157 ns (1 s)
+practice images ready: [(500, 1024), (500, 1024)] (1 s)
+[INT4_all3] step 20/20 distillation loss 0.06859 (7 s)
+INT4 + distillation + learned scales, first/last layers 8 bit synthetic 0.110 ns  HEK293 0.131 ns (7 s)
+whole pipeline 4 bit: LLE V4 + NIII INT4 + distillation + learned scales, first/last layers 8 bit: synthetic 0.136 ns  HEK293 0.141 ns
+ALL DONE (8 s)

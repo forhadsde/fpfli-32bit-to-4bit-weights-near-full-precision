@@ -1,0 +1,57 @@
+{
+  "FP32 (original)": {
+    "synthetic 1": 0.08504605293273926,
+    "synthetic 2": 0.11860092729330063,
+    "synthetic 3": 0.08819836378097534,
+    "synthetic 4": 0.14263884723186493,
+    "synthetic 5": 0.34591740369796753,
+    "synthetic 6": 0.1862366795539856,
+    "HEK293": 0.13413378596305847,
+    "synthetic mean": 0.16110637908180556
+  },
+  "INT8 plain": {
+    "synthetic 1": 0.08417930454015732,
+    "synthetic 2": 0.11833208054304123,
+    "synthetic 3": 0.09059014916419983,
+    "synthetic 4": 0.14237593114376068,
+    "synthetic 5": 0.3442186713218689,
+    "synthetic 6": 0.18518689274787903,
+    "HEK293": 0.13383527100086212,
+    "synthetic mean": 0.1608138382434845
+  },
+  "INT4 plain": {
+    "synthetic 1": 0.32909491658210754,
+    "synthetic 2": 0.20790909230709076,
+    "synthetic 3": 0.17147821187973022,
+    "synthetic 4": 0.35202085971832275,
+    "synthetic 5": 0.4474858343601227,
+    "synthetic 6": 0.2542269229888916,
+    "HEK293": 0.1572602093219757,
+    "synthetic mean": 0.2937026396393776
+  },
+  "INT4 + distillation + learned scales, first/last layers 8 bit": {
+    "synthetic 1": 0.08916201442480087,
+    "synthetic 2": 0.11246493458747864,
+    "synthetic 3": 0.08915993571281433,
+    "synthetic 4": 0.14949136972427368,
+    "synthetic 5": 0.3216877579689026,
+    "synthetic 6": 0.1799212247133255,
+    "HEK293": 0.13227806985378265,
+    "synthetic mean": 0.15698120618859926
+  },
+  "whole pipeline 4 bit: LLE V4 + NIII INT4 + distillation + learned scales, first/last layers 8 bit": {
+    "synthetic 1": 0.10543478280305862,
+    "synthetic 2": 0.12635479867458344,
+    "synthetic 3": 0.11961265653371811,
+    "synthetic 4": 0.1589532196521759,
+    "synthetic 5": 0.3009011149406433,
+    "synthetic 6": 0.15789926052093506,
+    "HEK293": 0.13943345844745636,
+    "synthetic mean": 0.16152597218751907
+  },
+  "memory MB (NIII weights)": {
+    "FP32": 58.2144,
+    "INT8": 14.5536,
+    "INT4": 7.2768
+  }
+}
