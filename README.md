@@ -2,6 +2,8 @@
 
 **Author:** Md Forhadul Islam
 
+**Report (IEEE style, PDF):** [Islam_FPFLI_4bit_Independent_Study_Report.pdf](Islam_FPFLI_4bit_Independent_Study_Report.pdf)
+
 This repository holds four experiments on **FPFLI** (Few Photon Fluorescence Lifetime Imaging; Xiao, Sapermsap, Chen and Li, *Optica* 10(7), 944 to 951, 2023). FPFLI uses two neural networks to build a sharp fluorescence lifetime image from only about 10 photons per pixel.
 
 The question behind the work is simple: **can this pipeline be made small enough for low power hardware such as an FPGA, without losing accuracy?** I reproduced the published pipeline, found exactly where 4 bit weights break it, and then retrained both networks so the whole pipeline runs with 4 bit weights.
